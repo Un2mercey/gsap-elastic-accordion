@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/<repo>/',
+    base: '/gsap-elastic-accordion/',
     build: {
         outDir: resolve(__dirname, 'docs'),
     },

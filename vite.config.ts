@@ -14,4 +14,11 @@ export default defineConfig({
             reactivityTransform: true,
         }),
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                additionalData: `@import "@/styles/_variables.scss";`,
+            },
+        },
+    },
 });

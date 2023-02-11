@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
         "preview": "vite preview",
         "format": "prettier --write .",
         "predeploy": "yarn run build",

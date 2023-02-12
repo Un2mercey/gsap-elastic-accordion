@@ -1,1 +1,1 @@
-Before deploy add `/<repo>/` to the images path
+# GSAP animation usage

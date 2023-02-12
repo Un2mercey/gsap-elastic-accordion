@@ -6,7 +6,7 @@
         </h1>
         <div class="elastic-accordion-wrapper">
             <div
-                v-for="(image, index) in images.slice(9)"
+                v-for="(image, index) in images"
                 :key="image.background"
                 :ref="skipUnwrap.itemRefs"
                 :style="`background-image: ${image.background}`"
@@ -30,7 +30,7 @@ const itemRefs = ref([]);
 const skipUnwrap = { itemRefs };
 
 const images: Image[] = Array.from({ length: 12 }, (e: undefined, index: number) => ({
-    background: `url('/assets/img/photo-${index + 1}.jpg')`,
+    background: `url('/gsap-elastic-accordion/assets/img/photo-${index + 1}.jpg')`,
     clicked: false,
 }));
 
@@ -64,11 +64,9 @@ function expand(image: Image, index: number) {
     justify-content: center;
 
     &-wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
         margin: 0;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
     }
 
     &-item {

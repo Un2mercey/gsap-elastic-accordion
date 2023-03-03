@@ -78,6 +78,7 @@ function expand(image: Image, index: number) {
         border-radius: 3vw;
         display: inline-block;
         cursor: pointer;
+        will-change: auto;
     }
 }
 </style>
